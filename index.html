@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Coffee in Kenya</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7/leaflet.css"/>
+    <!--<link rel="stylesheet" type="text/css" href="/css/dark-glass/sidebar.css" />-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/datatables/1.10.6/css/jquery.dataTables.css" />
+    <link rel="stylesheet" href="css/L.Control.Sidebar.css" />
+    <link rel="stylesheet" href="css/inventory.css" />
+    <link rel="stylesheet" href="css/leaflet-geojson-list.css" />
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css"/>
+    <link rel="stylesheet" href="css/slider_tab.css"/>
+<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script src='http://api.tiles.mapbox.com/mapbox.js/v1.0.0/mapbox.js'></script>
+<script src="js/underscore.js"></script>
+<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+<script src="js/d3.min.js"></script>   
+<script src="js/dimple.v2.2.0.min.js"></script> 
+
+<script type="text/javascript" src="js/jquery.collapsible.js"></script>
+
+   
+</head>
+
+<body id="body">
+
+<div id="map"class="map"></div>
+<!-- The overlay -->
+<div id="myNav" class="overlay" >
+    <script type="text/javascript">
+        document.getElementById("myNav").style.width = "100%";
+        function closeNav() {
+            document.getElementById("myNav").style.width = "0%";
+        }
+    </script>
+  <!-- Button to close the overlay navigation -->
+<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <!-- Overlay content -->
+<div class="overlay-content">
+<div id="heading">
+    Coffee producing counties in Kenya
+</div>
+<br>
+    <pre>Inventory at a glance</pre>
+<div id="chartContainer"></div>
+<p class="lorem">Click on the right to exit</p>
+</div>  
+
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/datatables/1.10.6/js/jquery.dataTables.min.js"/></script>
+<script>
+        src="http://cdn.leafletjs.com/leaflet-0.7.2/leaflet.js"
+</script>
+
+<script type="text/javascript" src="js/L.Control.Sidebar.js"/></script>
+<script src="js/leaflet-geojson-list.js"></script>
+<script type="text/javascript" src="js/counties.js"/></script><!--js source source code-->
+<script type="text/javascript" src="js/belt.js"/></script><!--js source source code-->
+<script type="text/javascript" src="js/producers.js"/></script><!--js source source code-->
+<script type="text/javascript" src="js/inventory_static.js"/></script><!--js source source code-->
+
+</body>
+</html>
